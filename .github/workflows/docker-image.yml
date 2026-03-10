@@ -27,4 +27,4 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ghcr.io/${{ github.repository }}:latest
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
